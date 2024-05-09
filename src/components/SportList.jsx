@@ -56,7 +56,7 @@ const SportList = () => {
   
 
   return (
-    <div className="px-32 bg-gray-900 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="px-32 bg-gray-900 h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
       {sportsData.map((sport) => (
         <div key={sport.key} className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div className="px-4 pt-4">
@@ -75,14 +75,14 @@ const SportList = () => {
             </span>
             <div className="flex mt-4 md:mt-6">
               <a
-                href="#"
+                href={`/predict/${sport.key}`}
                 className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Predict
               </a>
               <a
                 href="#"
-                className={`py-2 px-4 ms-2 text-sm font-medium focus:outline-none bg-white rounded-lg border focus:z-10 focus:ring-4 dark:focus:ring-gray-700 dark:bg-gray-800 dark:hover:text-white dark:hover:bg-gray-700 
+                className={`py-2 px-4 ms-2 text-sm font-medium focus:outline-none bg-white rounded-lg border dark:bg-gray-800 
                 ${
                   sport.active ? "dark:text-green-700 border-green-700" : "dark:text-red-700 border-red-700"
                 }`}

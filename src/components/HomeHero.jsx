@@ -4,7 +4,7 @@ import SportList from "./SportList";
 const HomeHero = () => {
   return (
     <div>
-      <section class="mt-16 bg-white dark:bg-gray-900">
+      <section class="mt-16 h-full bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
           <h1 class="pt-16 mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           Find any sport from anywhere             
